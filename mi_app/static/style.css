@@ -1,0 +1,15 @@
+#cajatiempo{
+    min-height: 300px;
+}
+
+
+
+.container iframe {
+    display: inline-block;
+    max-height: 90%;
+}
+
+#gcontainer{
+    background-image: url('https://c8.alamy.com/compes/2bcyfxg/pigeon-gangster-pandilla-patron-sin-costuras-cool-city-pajaro-fondo-swag-gangsta-ornamento-paloma-rapper-tipo-textura-vectorial-2bcyfxg.jpg');
+}
+

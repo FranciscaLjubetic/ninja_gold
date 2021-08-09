@@ -1,0 +1,94 @@
+.container{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91dda5fd-93d0-4124-abe4-50bdf8e54899/dd3s6nh-c887efaf-5bed-4801-9e50-47d522af4722.jpg/v1/fill/w_988,h_809,q_70,strp/dragon_treasure_by_nele_diel_dd3s6nh-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTgyIiwicGF0aCI6IlwvZlwvOTFkZGE1ZmQtOTNkMC00MTI0LWFiZTQtNTBiZGY4ZTU0ODk5XC9kZDNzNm5oLWM4ODdlZmFmLTViZWQtNDgwMS05ZTUwLTQ3ZDUyMmFmNDcyMi5qcGciLCJ3aWR0aCI6Ijw9MTIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.hSUEyBhVcls4B033M04kwEQ9CwcDXrkvHz3--7XksNM');
+    background-size: cover;
+    /*url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1aeb2ec7-c77a-4b7e-a1e6-c8ec98633fad/d5d1ifl-02e4d0ad-aea7-4d30-9287-18a5bd74d26c.png/v1/fill/w_900,h_900,q_80,strp/seamless_gold_texture_by_o_o_o_o_0_o_o_o_o_d5d1ifl-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMWFlYjJlYzctYzc3YS00YjdlLWExZTYtYzhlYzk4NjMzZmFkXC9kNWQxaWZsLTAyZTRkMGFkLWFlYTctNGQzMC05Mjg3LTE4YTViZDc0ZDI2Yy5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7B_IkuflwIcjhA32pYaONEiC0b0D67k6Wrq7JLgOcCg');*/
+    /*background-image: url('https://thumbs.dreamstime.com/b/chinese-yellow-gold-seamless-pattern-dragon-fish-scales-simple-seamless-pattern-nature-background-japanese-wave-circle-patter-79380946.jpg')*/
+}
+
+    #cajaactivities{
+        height: 100px;
+        overflow-y: scroll;
+    }
+
+    
+    
+    .animated-shadow {
+
+            font: normal  Varela Round, sans-serif;
+            left: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            animation: move linear 5000ms infinite;
+            z-index: 2
+            
+        }
+            /*Animación para rotar las sombras*/
+            @keyframes move {
+            0% {
+                text-shadow:
+                4px -4px 0 #fd7d05,
+                3px -3px 0 #fd7d05,
+                2px -2px 0 #fd7d05,
+                1px -1px 0 #fd7d05,
+                -4px 4px 0 #13f1fc,
+                -3px 3px 0 #13f1fc,
+                -2px 2px 0 #13f1fc,
+                -1px 1px 0 #13f1fc
+                ;
+            }
+            25% {
+                text-shadow:
+                -4px -4px 0 #13f1fc,
+                -3px -3px 0 #13f1fc,
+                -2px -2px 0 #13f1fc,
+                -1px -1px 0 #13f1fc,
+                4px 4px 0 #fd7d05,
+                3px 3px 0 #fd7d05,
+                2px 2px 0 #fd7d05,
+                1px 1px 0 #fd7d05
+            ;
+            }
+            50% {
+                text-shadow:
+                -4px 4px 0 #fd7d05,
+                -3px 3px 0 #fd7d05,
+                -2px 2px 0 #fd7d05,
+                -1px 1px 0 #fd7d05,
+                4px -4px 0 #13f1fc,
+                3px -3px 0 #13f1fc,
+                2px -2px 0 #13f1fc,
+                1px -1px 0 #13f1fc
+                ;
+            }
+            75% {
+                text-shadow:
+                4px 4px 0 #13f1fc,
+                3px 3px 0 #13f1fc,
+                2px 2px 0 #13f1fc,
+                1px 1px 0 #13f1fc,
+                -4px -4px 0 #fd7d05,
+                -3px -3px 0 #fd7d05,
+                -2px -2px 0 #fd7d05,
+                -1px -1px 0 #fd7d05
+                ;
+            }
+            100% {
+                text-shadow:
+                4px -4px 0 #fd7d05,
+                3px -3px 0 #fd7d05,
+                2px -2px 0 #fd7d05,
+                1px -1px 0 #fd7d05,
+                -4px 4px 0 #13f1fc,
+                -3px 3px 0 #13f1fc,
+                -2px 2px 0 #13f1fc,
+                -1px 1px 0 #13f1fc
+                ;
+            }
+        }
+#pics img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+

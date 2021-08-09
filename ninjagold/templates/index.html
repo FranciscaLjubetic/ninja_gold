@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title> Ninja Gold</title>
+</head>
+<body>
+    <div class="container btn-warning p-4">
+
+        <div class="row p-3" >
+            <div class="col-9 ms-2" >
+                <h1 class="text-left text-white animated-shadow mb-3" style="display: inline-block; font-size: 80px;">NINJA GOLD  💳</h1>
+            </div>
+            <div class="col text-center align-bottom ms-4 mt-4">
+                {% csrf_token %}
+                <a href="/ninjagold/reset" class="btn btn-light text-warning mt-2 border border" style="font-weight: bolder; font-size: 20px;"> Reset </a>
+            </div>
+        
+        </div>
+        
+        <div class="row">
+            <div  class="col-3 text-center text-warning font-weight-bold p-0">
+                <h5>Earn 10-20 golds<br> at the farm</h5>
+            </div>
+            <div  class="col-3 text-center text-warning font-weight-bold p-0">
+                <h5>Earn 5-10 golds <br>at the cave</h5>
+            </div>
+            <div  class="col-3 text-center text-warning font-weight-bold p-0">
+                <h5>Earn 2-5 golds<br> at home</h5>
+            </div>
+            <div  class="col-3 text-center text-warning font-weight-bold p-0">
+                <h5>Earn or lose<br> 0-50 golds <br>at the casino</h5>
+            </div>
+
+            <div id="pics" class="col-3 pt-0 ps-3 pe-3 pb-0 text-center">
+                <img class="border border-info"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d733837-eae3-48b0-883b-955ce7172d8a/db6l7w6-98794d3f-2944-4191-9c43-97331aa9d9c2.jpg/v1/fill/w_1192,h_670,q_70,strp/farm_by_frankatt_db6l7w6-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvM2Q3MzM4MzctZWFlMy00OGIwLTg4M2ItOTU1Y2U3MTcyZDhhXC9kYjZsN3c2LTk4Nzk0ZDNmLTI5NDQtNDE5MS05YzQzLTk3MzMxYWE5ZDljMi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nhGFTYD45FW7h6XWulI7SzCMEq5Rk6Zi7zvYeZ1SylM" alt="" >
+            </div>
+            <div id="pics" class="col-3 pt-0 ps-3 pe-3 pb-0 text-center">
+                <img class="border border-info"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/73396b8c-e810-4c64-a57c-b6aa7e6ec798/da6o1ap-952a09e4-5a9e-446b-80ea-c01239e5389e.jpg/v1/fill/w_1109,h_721,q_70,strp/cave_of_beasts_by_mr__jack_da6o1ap-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzgwIiwicGF0aCI6IlwvZlwvNzMzOTZiOGMtZTgxMC00YzY0LWE1N2MtYjZhYTdlNmVjNzk4XC9kYTZvMWFwLTk1MmEwOWU0LTVhOWUtNDQ2Yi04MGVhLWMwMTIzOWU1Mzg5ZS5qcGciLCJ3aWR0aCI6Ijw9MTIwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.H0VQuxuOojoO8KkAiYQHTS-eIC2wm8QD3x87dKBttIE" alt="" >
+            </div>
+            <div id="pics" class="col-3 pt-0 ps-3 pe-3 pb-0 text-center">
+                <img class="border border-info"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c2d08d9c-cb9d-4625-8604-a13008b6abd7/dd5k4g2-0c15b091-8f5e-4f75-b644-a0411a1df94b.jpg/v1/fill/w_1024,h_683,q_75,strp/house_of_gnomes_by_annewipf_dd5k4g2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjgzIiwicGF0aCI6IlwvZlwvYzJkMDhkOWMtY2I5ZC00NjI1LTg2MDQtYTEzMDA4YjZhYmQ3XC9kZDVrNGcyLTBjMTViMDkxLThmNWUtNGY3NS1iNjQ0LWEwNDExYTFkZjk0Yi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.tsFtag89p2CB0bp5VbKJYe_LMbCMchPL4shmbMRuZEM" alt="" >
+            </div>
+            <div id="pics" class="col-3 pt-0 ps-3 pe-3 pb-0 text-center">
+                <img class="border border-info"src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/186755d7-f42c-4587-9406-dde3e9877607/dc7hdhk-531304cc-3973-4b09-aadf-924e2e3dfa22.jpg/v1/fill/w_1024,h_530,q_75,strp/casino_by_xkamillox_dc7hdhk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTMwIiwicGF0aCI6IlwvZlwvMTg2NzU1ZDctZjQyYy00NTg3LTk0MDYtZGRlM2U5ODc3NjA3XC9kYzdoZGhrLTUzMTMwNGNjLTM5NzMtNGIwOS1hYWRmLTkyNGUyZTNkZmEyMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.fqRq-yNogua4FCbyeoF5ufrwaR7Orh0c7G-eHoL-dcE" alt="" >
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row text-center pb-3">
+                <div class="col-3">
+                    <a href="/ninjagold/processmoney/HOUSE" class="btn btn-warning text-white mt-2" style="font-weight: bolder; font-size: 20px;" name="HOUSE" >Find Gold!</a>
+                </div>
+                <div class="col-3">
+                    <a href="/ninjagold/processmoney/CAVE" class="btn btn-warning text-white mt-2" style="font-weight: bolder; font-size: 20px;" name="CAVE" >Find Gold!</a>
+                </div>
+                <div class="col-3">
+                    <a href="/ninjagold/processmoney/FARM" class="btn btn-warning text-white mt-2" style="font-weight: bolder; font-size: 20px;" name="FARM" >Find Gold!</a>
+                </div>
+                <div class="col-3">
+                    <a href="/ninjagold/processmoney/CASINO" class="btn btn-warning text-white mt-2" style="font-weight: bolder; font-size: 20px;" name="CASINO" >Find Gold!</a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row ps-4">
+
+            <div class="col-6 p-4">
+                <div class="row mb-3">
+                    <h5 class="text-warning">Activities</h5>
+                    <div id="cajaactivities" class="col-11 border border-info bg-light">
+                        <ul>
+                            {% for activity in request.session.activities %}
+                            <li class="{% if activity.golds >= 0 %} text-primary{% else %} text-danger{% endif %}">{{ activity.text }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <h5 class="text-warning col-3" style="display: inline-block;">Your Gold:</h5>
+                    <h5 class="text-primary bg-light border border-info b-0 col-8" style="display: inline-block;"> {{ request.session.gld }}</h5>  
+                </div>
+                    
+            </div>
+            
+            <div class="col-6"style="display:None">
+                <div class="row p-4 mt-2">
+                    <form action="/ninjagold/config" method="POST" target="_blank">
+                        <h5 class="p-0 text-warning text-center mt-4 pt-4">Settings</h5>
+                        <div>
+                            {% csrf_token %}
+                            <input type="range" id="intent" name="intents" class="col-8" min="5" max="20"value="5" step="01">
+                            <label class="text-warning" for="volume">Attempts (5-20 intents)</label>
+                        </div>
+
+                        <div>
+                            {% csrf_token %}
+                            <input type="range" id="amount" name="amount" class="col-8" min="0" max="100" value="0" step="01">
+                            <label class="text-warning" for="cowbell">Amount (0-200 golds)</label>
+                        </div>
+                            {% csrf_token %}
+                            <a href="/ninjagold/config/SUBMIT" class="btn btn-warning text-white mt-2" style="font-weight: bolder; font-size: 20px;" name="SUBMIT">Submit</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

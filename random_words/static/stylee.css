@@ -1,0 +1,20 @@
+#cajatiempo{
+    min-height: 300px;
+}
+
+.container img{
+    display: inline-block;
+    max-height: 90%;
+}
+
+
+.container iframe {
+    display: inline-block;
+    max-height: 90%;
+}
+
+.container{
+    background-image: url('https://media.istockphoto.com/videos/beautiful-white-hexagons-on-surface-morphing-in-seamless-3d-animation-video-id966407426?s=640x640');
+    background-size: cover;
+}
+
